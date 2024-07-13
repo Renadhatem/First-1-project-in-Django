@@ -1,0 +1,22 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<div class="container">
+    <h1>List Blogs</h1>
+    <table class="table" >
+        <thead>
+            <th>Id</th>
+            <th>Category</th>
+        </thead>
+        {% for categorie in categories %}
+        <tr>
+            <td>{{ categorie.id }}</td>
+            <td>{{ categorie.Name }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    <br><br>
+
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<div class="container">
+    <h1>List Blogs</h1>
+    <table class="table" >
+        <thead>
+            <th>Id</th>
+            <th>Post</th>
+            <th>User</th>
+            <th>Content</th>
+            <th>DateTime</th>
+        </thead>
+        {% for comment in comments %}
+        <tr>
+            <td>{{ comment.id }}</td>
+            <td>{{ comment.post }}</td>
+            <td>{{ comment.user }}</td>
+            <td>{{ comment.Content }}</td>
+            <td>{{ comment.Date_Posted }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    <br><br>
+
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<div class="container">
+    <h1> Home </h1>
+    <ul>
+
+        <li class="list-unstyled"><a type="button" class="btn btn-primary m-3" href="{% url 'users' %}">List Users </a></li>
+        <li class="list-unstyled"><a type="button" class="btn btn-primary m-3" href="{% url 'blogs' %}">List Blogs  </a></li>
+        <li class="list-unstyled"><a type="button" class="btn btn-primary m-3" href="{% url 'comments' %}">List Comments </a></li>
+        <li class="list-unstyled"><a type="button" class="btn btn-primary m-3" href="{% url 'categories' %}">List categories </a></li>
+    </ul>
+</div>
+
+
+{% endblock %}
